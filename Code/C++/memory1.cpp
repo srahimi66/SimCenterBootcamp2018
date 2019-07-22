@@ -1,12 +1,11 @@
 #include <iostream>
-using namespace std;
 
 int main(int argc, char **argv) {
   int n;
   double *array1, *array2, *array3;
 
-  cout << "enter n: ";
-  cin >> n;
+  std::cout << "enter n: ";
+  std::cin >> n;
 
   // allocate memory & set the data
   array1 = new double[n];

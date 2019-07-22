@@ -1,6 +1,4 @@
 #include <iostream>
-using namespace std;
-
 #include "Program.h"
 #include "Add2.h"
 #include "AddVarArgs.h"
