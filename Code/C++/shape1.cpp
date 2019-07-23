@@ -1,23 +1,21 @@
 #include <iostream>
 #include "shape1.h"
 
-using namespace std;
-
 int main(int argc, char **argv) {
   Circle s1(2.0);
   Shape *s2 = new Rectangle(1.0, 2.0);
   Shape *s3 = new Rectangle(3.0,2.0);
   
-  s1.PrintArea(cout);
-  s2->PrintArea(cout);
-  s3->PrintArea(cout);
+  s1.PrintArea(std::cout);
+  s2->PrintArea(std::cout);
+  s3->PrintArea(std::cout);
 
   return 0;
 }
 
 
 Shape::~Shape() {
-  cout << "Shape Destructor\n";
+  std::cout << "Shape Destructor\n";
 }
 
 void
@@ -29,7 +27,7 @@ Shape::PrintArea(ostream &s) {
 int Rectangle::numRect = 0;
 Rectangle::~Rectangle() {
   numRect--;
-  cout << "Rectangle Destructor\n";
+  std::cout << "Rectangle Destructor\n";
 }
 
 Rectangle::Rectangle(double w, double d)
@@ -49,7 +47,7 @@ Rectangle::PrintArea(ostream &s) {
 }
 
 Circle::~Circle() {
-  cout << "Circle Destructor\n";
+  std::cout << "Circle Destructor\n";
 }
 
 Circle::Circle(double d) {
