@@ -2,12 +2,9 @@
 #define _DOMAIN
 
 #include "Domain.h"
-
 #include <map>
 
 class Node;
-
-using namespace std;
 
 class Domain {
  public:
@@ -19,7 +16,7 @@ class Domain {
   int AddNode(Node *theNode);
 
  private:
-  map<int, Node *>theNodes;
+  std::map<int, Node *>theNodes;
 };
 
 #endif

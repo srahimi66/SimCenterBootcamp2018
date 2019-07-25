@@ -1,19 +1,19 @@
 #include <iostream>
 #include <string>
-using namespace std;
+
 
 int main(int argv, char **argc) {
-  string pName = argc[0];
-  string str;
-  cout << "Enter Name: ";
-  cin >> str;
+  std::string pName = argc[0];
+  std::string str;
+  std::cout << "Enter Name: ";
+  std::cin >> str;
 
   if (pName == "./a.out")
     str += " the lazy sod";
 
   str += " says ";
   str = str + "HELLO World";
-  cout << str << "\n";
+  std::cout << str << "\n";
 
   return 0;
 }

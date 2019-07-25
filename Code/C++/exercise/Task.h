@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <queue>
-using namespace std;
 
 class Task {
  public:
@@ -17,7 +16,7 @@ class Task {
   virtual void Print(ostream &s) = 0;
 
  protected:
-  queue<Task *>taskQueue;  // making protected so subclasses can 
+  std::queue<Task *>taskQueue;  // making protected so subclasses can 
                            // take own tasks and either addd int or double res
 };
 
